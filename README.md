@@ -1,4 +1,6 @@
-![](/home/lucasmumbarra/Área de Trabalho/school/ignite/react/chapter3/spacetraveling/public/images/Logo.svg)
+<div align="center">
+  <img src="./public/images/Logo.svg" alt="Logo">
+</div>
 
 ------
 
@@ -7,13 +9,12 @@
 	SpaceTraveling | Next.js
 </h1>
 
-------
 <p align="center"> Blog utilizando Prismic CMS</p>
 
 <p align="center">
-	<a href="#sobre-o-projeto">Sobre o Projeto</a>  | 
-    <a href="#tecnologias">Tecnologias</a>  | 
-    <a href="#configurações-necessárias">Configurações necessárias</a>  | 
+	<a href="#sobre-o-projeto">Sobre o Projeto</a>  |
+    <a href="#tecnologias">Tecnologias</a>  |
+    <a href="#configurações-necessárias">Configurações necessárias</a>  |
     <a href="#licença">Licença</a>
 </p>
 
