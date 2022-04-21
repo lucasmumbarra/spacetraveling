@@ -92,22 +92,14 @@ export default function Home({
 
 export const getStaticProps: GetStaticProps = async () => {
   const prismic = getPrismicClient({});
-  const postsResponse = await prismic.getByType(
-    'posts',
-    {
-      orderings: {
-        field: 'document.first_publication_date',
-        direction: 'desc',
-      },
-      fetchLinks: ['posts.title', 'posts.subtitle', 'posts.author'],
-      pageSize: 1,
-    }
-    // predicates: prismic.predicate.at('document.type', 'posts'),
-    // {
-    //   fetch: ['posts.title', 'posts.subtitle', 'posts.author'],
-    //   pageSize: 1,
-    // }
-  );
+  const postsResponse = await prismic.getByType('posts', {
+    orderings: {
+      field: 'document.first_publication_date',
+      direction: 'desc',
+    },
+    fetchLinks: ['posts.title', 'posts.subtitle', 'posts.author'],
+    pageSize: 1,
+  });
 
   const posts = postsResponse.results.map(post => {
     return {
